@@ -129,11 +129,7 @@ class MyWidget(QMainWindow):
 		except:
 			pass
 
-	def center_window(self):
-   		qtRectangle = self.frameGeometry()
-   		centerPoint = QDesktopWidget().availableGeometry().center()
-   		qtRectangle.moveCenter(centerPoint)
-   		self.move(qtRectangle.topLeft())
+	
 		
 
 
