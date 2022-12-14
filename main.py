@@ -72,6 +72,7 @@ class MyWidget(QMainWindow):
 				msg.setText("File is Empty")
 				msg.setIcon(QMessageBox.Critical)
 				msg.exec_()
+				return
 
 			
 
@@ -115,9 +116,11 @@ class MyWidget(QMainWindow):
 					self.df.to_csv(export_fname,index=False)
 				else:
 					self.df.to_excel(export_fname,index=False)	
-					msg = QMessageBox(self)			
-					msg.setText("Cleaned Successfully")			
-					msg.exec_()
+				
+				msg = QMessageBox(self)			
+				msg.setText("Cleaned Successfully")			
+				msg.exec_()
+
 			else:
 				msg = QMessageBox(self)			
 				msg.setText("Select at least 1 option")			
