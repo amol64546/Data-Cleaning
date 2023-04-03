@@ -22,9 +22,8 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-
 - Use the interface to upload your dataset and initiate the cleaning process
 - The cleaned dataset will be saved as a new file with the same name as the original dataset, but with "_cleaned" appended to the filename.
 
-Contributing
+# Contributing
 - Contributions are welcome! If you find any bugs or issues with the application or adding any new features please open an issue on the GitHub repository. Pull requests are also welcome.
